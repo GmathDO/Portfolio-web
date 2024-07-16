@@ -1,0 +1,294 @@
+@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: #F5F5F5;
+    font-family: "Raleway", sans-serif;
+}
+
+body a{
+    color: black;
+    text-decoration: none;
+}
+
+header{
+    padding: 20px 50px;
+}
+
+.nav{
+    display: flex;
+    justify-content: space-between;
+}
+
+.nav--menu{
+    list-style: none;
+}
+
+.item{
+    display: inline-block;
+    margin: 0 20px;
+}
+
+.desktop-content{
+    display: none;
+}
+
+/*-------------------------Main-------------------------*/
+
+.main-container{
+    display: flex;
+    flex-direction: column;
+    padding: 30px;
+}
+
+.foto-perfil{
+    margin-bottom: 30px;
+    width: 150px;
+    border-radius: 50%;
+}
+
+.titulo{
+    font-weight: bold;
+    font-size: 1.5rem;
+}
+
+.text{
+    font-size: 1.15rem;
+    margin: 20px 0;
+}
+
+.redes{
+    list-style: none;
+}
+
+.redes li{
+    display: inline-block;
+}
+
+/*-------------------------Sobre Mi-------------------------*/
+
+.sobre-mi-container{
+    padding: 60px 30px;
+    background-color: #c6dcfb;
+}
+
+/*-------------------------Skills-------------------------*/
+
+.skills-section{
+    padding: 60px 30px;
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+}
+
+.skills-container{
+    display: flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    margin-top: 15px;
+    gap: 16px;
+}
+
+.skill-item{
+    width: 156px;
+    height: 118px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    background-color: #FFFFFF;
+    border-radius: 5px;
+}
+
+.skill-item i{
+    font-size: 2.5em;
+    color: #2A7AE4;
+}
+
+/*-------------------------Formacion-------------------------*/
+
+.formacion-section{
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #c6dcfb;
+}
+
+.formacion-container{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    column-gap: 30px;
+}
+
+.imagen-container{
+    width: 224px;
+    text-align: center;
+    background-color: #FFFFFF;
+    padding: 20px 0;
+    border-radius: 5px;
+    margin: 15px auto auto;
+}
+
+.formacion-imagen{
+    width: 50%;
+}
+
+.formacion-text h2{
+    margin: 10px 0;
+}
+
+.formacion-text h3{
+    color: gray;
+}
+
+/*-------------------------Proyectos-------------------------*/
+
+.proyectos-section{
+    padding: 60px 30px;
+    text-align: center;
+}
+
+.proyectos-container{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-top: 10px;
+}
+
+.proyecto-item{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.proyecto-preview{
+    width: 80%;
+    margin-top: 15px;
+}
+
+.proyecto-imagen{
+    width: 100%;
+}
+
+.proyecto-text h3{
+    margin: 10px 0;
+    color: gray;
+}
+
+.boton{
+    width: 108px;
+    height: 40px;
+    padding: 12px 16px 12px 16px;
+    color: #FFFFFF;
+    background: #2A7AE4;
+    border: none;
+}
+
+.boton:hover{
+    cursor: pointer;
+    background: transparent;
+    color: #2A7AE4;
+    border: 1px solid #2A7AE4
+}
+
+.boton:active{
+    box-shadow: 0px 0px 7px 4px #69a0e4 inset;
+}
+
+/*-------------------------Contacto-------------------------*/
+
+.contacto-section{
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #c6dcfb;
+}
+
+.contacto-container{
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    margin-top: 30px;
+}
+
+.contacto-item a{
+    color: black;
+    text-decoration: none;
+}
+
+.contacto-item i{
+    font-size: 1.5em;
+    margin-bottom: 5px;
+}
+
+/*-------------------------Footer-------------------------*/
+
+footer{
+    text-align: center;
+    padding: 60px 30px;
+    background-color: #c6dcfb;   
+}
+
+/*-------------------------( > 538px )-------------------------*/
+
+@media screen and (width > 538px){
+    .imagen-container{
+        height: 100px;
+    }
+}
+
+/*-------------------------( > 600px )-------------------------*/
+
+@media screen and (width > 600px) {
+    .skills-container{
+        justify-content: space-between;
+    }
+}
+
+/*-------------------------( Desktop )-------------------------*/
+
+@media screen and (width > 1020px) {
+
+    .main-container{
+        flex-direction: row-reverse;
+        align-items: center;
+        padding: 30px 100px;
+    }
+
+    .foto-perfil{
+        width: 300px;
+    }
+
+    .main-text{
+        margin-right: 80px;
+    }
+    
+    .sobre-mi-container{
+        padding: 70px 100px;
+    }
+
+    .skills-section{
+        padding: 70px 100px;
+    }
+
+    .formacion-container{
+        padding: 70px 100px
+    }
+
+    .proyectos-section{
+        padding: 70px 100px;
+    }
+
+    .proyecto-item{
+        align-items: center;
+        gap: 20px;
+    }
+
+    .desktop-content{
+        display: inline-block;
+    }
+
+    .contact-menu{
+        display: inline-block;
+    }
+}
